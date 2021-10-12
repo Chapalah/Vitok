@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "_vars";
+@import "_header";
+@import "_main-block";
+@import "_info-block";
+@import "_products";
+@import "_product";
+@import "_modal";
+@import "_vacancies";
+@import "_kitchen";
+@import "_contacts";
+
+._container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+._default-text {
+    font-weight: 400;
+    font-size: 1.2em;
+
+    @media (max-width: 320px) {
+        font-size: 1em;
+    }
+}
+
+._default-title {
+    font-size: 2.7em;
+        
+    @media (max-width: 1024px) {
+        font-size: 2.2em;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.5em;
+    }
+}
+
+._btn {
+    height: 50px;
+    background: $cl_primary;
+    border-radius: 5px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0 1em;
+
+    @media (max-width: 425px) {
+        font-size: .9em;
+        height: 35px;
+    }
+
+    &:hover {
+        transition: .3s ease-in-out;
+        background: darken($cl_primary, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: .3);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 9px;
+    width: .5px;
+    height: 20px;
+}
+
+._hide {
+    display: none;
+}
+
+._show {
+    transition: .35s linear;
+    visibility: visible;
+    opacity: 1;
+}
+
+._line {
+    width: 150px;
+    height: 6px;
+    margin: 0 auto;
+    background: #E2E2E2;
+    border-radius: 5px;
+    margin-top: auto;
+}
