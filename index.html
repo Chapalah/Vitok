@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Виток</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__wrapper _container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>Vitok</h1>
+                </div>
+                <ul class="header__menu">
+                    <li class="header__li">
+                        <a href="#main-block" class="header__link link-active">
+                            О предприятии
+                        </a> 
+                    </li>
+                    <li class="header__li">
+                        <a href="#products" class="header__link">
+                            Продукция
+                        </a> 
+                    </li>
+                    <li class="header__li">
+                        <a href="#vacancies" class="header__link">
+                            Вакансии
+                        </a> 
+                    </li>
+                    <li class="header__li">
+                        <a href="#contacts" class="header__link">
+                         Контакты
+                        </a> 
+                    </li>
+                    <li class="header__li">
+                        <a href="#kitchen" class="header__link">
+                            Столовая
+                        </a> 
+                    </li>
+                </ul>
+                <!-- <div class="header__search">
+                    <input type="text" placeholder="поиск" class="header__input">
+                </div> -->
+                <div class="header__burger">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-block" id="main-block" data-block="#main-block">
+        <div class="main-block__container _container">
+            <div class="main-block__content">
+                <div class="main-block__info">
+                    <h1 class="main-block__title _default-title">
+                        Унитарное предприятие «Виток»
+                    </h1>
+                    <p class="main-block__text _defaul-text">
+                        Унитарное предприятие «Виток» является широкопрофильным предприятием и представляет свою продукцию на рынке Республики Беларусь, стран СНГ, а также ближнего и дальнего зарубежья.
+                    </p>
+                    <button class="main-block__button _btn" data-link="#products">
+                        Наша продукция
+                    </button>
+                </div>
+                <div class="main-block__image">
+                    <img src="./img/vitok.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-block" data-block="#main-block">
+        <div class="info-block__container _container">
+            <div class="info-block__content">
+                <h2 class="info-block__title">
+                    Чем мы занимаемся?
+                </h2>
+                <p class="info-block__text">
+                    Cегодня наше предприятие является одним из крупнейших производителей и поставщиков электрораспределительной аппаратуры, широкого спектра пружин, изделий из пластмасс, швейных изделий, ортопедических матрасов.
+                </p>
+                <button class="info-block__button _btn" id="more-info">
+                    Больше информации
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products" data-block="#products">
+        <div class="products__container _container">
+            <div class="products__content">
+                <div class="products__head">
+                    <h2 class="products__title _default-title">
+                        Наша продукция
+                    </h2>
+                </div>
+                <div class="products__fillters">
+                    <div class="products__fillter _fillter-active" data-product="">
+                        Все
+                    </div>
+                    <div class="products__fillter"  data-product="spring">Пружины </div>
+                    <div class="products__fillter"  data-product="sensor"> 
+                        Датчики
+                    </div>
+                    <div class="products__fillter"  data-product="crunch">
+                        Жгуты проводов
+                    </div>
+                    <div class="products__fillter"  data-product="harness">
+                        Матрасы
+                    </div>
+                    <div class="products__fillter" data-product="plastic">Пластмассовые изделия</div>
+                    <div class="products__fillter" data-product="mattress">
+                        Скрепки
+                    </div>
+                    <div class="products__fillter" data-product="sewing">
+                        Швейная продукция
+                    </div>
+                    <div class="products__fillter" data-product="converters">
+                        Преобразователи
+                    </div>
+                </div>
+                <div class="products__body">
+                    <div class="products__row">
+                        <div class="products__item product _hide" data-product="spring">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Пружины сжатия
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="harness">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-1.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Пружины растяжения
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="crunch">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-2.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Жгуты проводов
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="mattress">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-4.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Скрепки
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="spring">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-3.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Матрасы 
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="sewing">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-5.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Подушки и одеяла
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="sensor">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-6.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Датчик гидросигнализатор
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Датчик гидросигнализатор серии ДГС предназначен для выдачи сигнала на индикаторные устройства или через согласующие цепи на исполнительные элементы, в том числе логические, о наличии жидкости в контрольной точке  гидросистемы  и выдачи сигнала о превышении температуры (88±3ºС) контролируемой жидкости.(только для ДГС-МТ).
+                                    Прибор разработан на нашем предприятии и серийно производится по ТУ РБ 100194961.059-2002.
+                                    Разработка защищена патентами РБ №9594, РФ №2300742, Украины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="plastic">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-7.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Изделия из пластмасс
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    С 2003 года предприятие производит изделия из пластмасс методом литья под давлением на оборудовании Arburg, Engel, Demag, Kuasy, БСЗ ЗАО "Атлант" с применением пресс-форм, предоставляемых заказчиком.
+                                    </br>
+                                    Объем впрыска до 1000 см³.
+                                    Применяемые материалы: полиэтилен, полистирол, ABC пластик, полиамид, ПВХ пластикат и проичие.
+                                    Предприятие обладает свободными производственными мощностями по литью изделий из пластмасс на следующем оборудовании:
+                                    Arburg: усилие запирания 75, объем впрыска 105, расстояние между колонами 320х320;
+                                    Engel: усилие запирания 50, объем впрыска 90;
+                                    БЗСТ 125/250: усилие запирания 125, объем впрыска 250, расстояние между колонами 460х460;
+                                    БЗСТ 15/1700: усилие запирания 315, объем впрыска 1000, расстояние между колонами 630х630..
+                                    Предприятие готово выполнить Ваши заказы по изготовлению изделий из пластмасс.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item product _hide" data-product="converters">
+                            <div class="product__wrapper">
+                                <div class="product__image">
+                                    <img src="./img/products/image 4-8.png" alt="">
+                                </div>
+                                <div class="product__text">
+                                    Преобразователи ПРП
+                                </div>
+                                <div class="product__line"></div>
+                                <div class="product__info">
+                                    Преобразователи первичные ПРП предназначены для преобразования механического вращения объекта в электрические сигналы, частота которых пропорциональна частоте вращения объекта. Преобразователь ПРП-1М производится и соответствует ТУ ВY 100194961.065-2016.
+                                    Прибор обеспечивает номинальные значения параметров при нормальных значениях климатических факторов внешней среды по ГОСТ 3940:
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__button _btn">
+                    Загрузить больше продукции
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies" id="vacancies" data-block="#vacancies">
+        <div class="vacancies__container _container">
+            <div class="vacancies__content">
+                <h2 class="vacancies__title">
+                    Унитарное предприятие «Виток» приглашает на работу специалистов:
+                </h2>
+                <p class="vacancies__contacts">
+                    Обращаться по адресу: г. Минск ул. М. Гусовского,20
+                </p>
+                <p class="vacancies__contacts">
+                    Телефон для справок: +375(17)3733234
+                </p>
+                <div class="vacancies__column">
+                    <div class="vacancies__item">
+                        <div class="vacancies__info">
+                            <div class="vacancies__text">
+                                <h2 class="vacancies__subtitle">Швея</h2>
+                                <ul class="vacancies__ul">
+                                    <li class="vacancies__li _defaul-text">2 смены</li>
+                                    <li class="vacancies__li _defaul-text">возможно предоставления койко-места в общежитии</li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__price">
+                                <h2 class="vacancies__salary">
+                                    от 550 бел.руб - 1 ставка
+                                </h2>
+                                <p class="vacancies__town _defaul-text">
+                                    Борисов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__item">
+                        <div class="vacancies__info">
+                            <div class="vacancies__text">
+                                <h2 class="vacancies__subtitle">Инженер – технолог</h2>
+                                <ul class="vacancies__ul">
+                                    <li class="vacancies__li _defaul-text">Требуется специалист с высшим образованием по специализации: технология изготовления матрасов</li>
+                                    <li class="vacancies__li _defaul-text">1 смена</li>
+                                    <li class="vacancies__li _defaul-text">возможно предоставления койко-места в общежитии</li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__price">
+                                <h2 class="vacancies__salary">
+                                    от 800 бел.руб - 1 ставка
+                                </h2>
+                                <p class="vacancies__town _defaul-text">
+                                    Борисов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__item">
+                        <div class="vacancies__info">
+                            <div class="vacancies__text">
+                                <h2 class="vacancies__subtitle">Переводчик жестового языка</h2>
+                                <ul class="vacancies__ul">
+                                    <li class="vacancies__li _defaul-text">возможно предоставления койко-места в общежитии</li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__price">
+                                <h2 class="vacancies__salary">
+                                    от 650 бел.руб - 1 ставка
+                                </h2>
+                                <p class="vacancies__town _defaul-text">
+                                    Борисов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__item">
+                        <div class="vacancies__info">
+                            <div class="vacancies__text">
+                                <h2 class="vacancies__subtitle">Повар</h2>
+                                <ul class="vacancies__ul">
+                                    <li class="vacancies__li _defaul-text">1 смена</li>
+                                    <li class="vacancies__li _defaul-text">возможно предоставления койко-места в общежитии</li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__price">
+                                <h2 class="vacancies__salary">
+                                    от 450 бел.руб - 1 ставка
+                                </h2>
+                                <p class="vacancies__town _defaul-text">
+                                    Минск
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__item">
+                        <div class="vacancies__info">
+                            <div class="vacancies__text">
+                                <h2 class="vacancies__subtitle"> Автоматчик на узловязальных  и 
+                                    навивочных автоматах и станках</h2>
+                                <ul class="vacancies__ul">
+                                    <li class="vacancies__li _defaul-text">2 смены</li>
+                                    <li class="vacancies__li _defaul-text">возможно предоставления койко-места в общежитии</li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__price">
+                                <h2 class="vacancies__salary">
+                                    от 650 бел.руб - 1 ставка
+                                </h2>
+                                <p class="vacancies__town _defaul-text">
+                                    Минск
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts" data-block="#contacts">
+        <div class="contacts__container _container">
+            <div class="contacts__content">
+                <div class="contacts__title _default-title">
+                    Контакты
+                </div>
+                <div class="contacts__choose">
+                    <div class="contacts__branch branch-active" data-branch="minsk">Минский филиал</div>
+                    <div class="contacts__branch" data-branch="borisov">Борисовский филиал</div>
+                </div>
+                <div class="contacts__branch_content" data-branch="minsk">
+                    <div class="contacts__wrapper">
+                            <div class="contacts__block">
+                            <div class="contacts__item">
+                                <div class="contacts__image">
+                                    <img src="./img/address.png" alt="">
+                                </div>
+                                <div class="contacts__info">
+                                    <div class="contacts__subtitle">
+                                        Юридический адресс
+                                    </div>
+                                    <div class="contacts__text">
+                                        г. Минск ул. М. Гусовского, д.20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__image">
+                                    <img src="./img/call.png" alt="">
+                                </div>
+                                <div class="contacts__info">
+                                    <div class="contacts__subtitle">
+                                        Юридический адресс
+                                    </div>
+                                    <div class="contacts__text">
+                                        г. Минск ул. М. Гусовского, д.20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__image">
+                                    <img src="./img/address.png" alt="">
+                                </div>
+                                <div class="contacts__info">
+                                    <div class="contacts__subtitle">
+                                        Юридический адресс
+                                    </div>
+                                    <div class="contacts__text">
+                                        г. Минск ул. М. Гусовского, д.20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__head" data-attr="1">
+                        <h2 class="contacts__subtitle">Отдел маркетинга, снабжения и сбыта</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="1">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__head" data-attr="2">
+                        <h2 class="contacts__subtitle">Производство жгутов проводов, датчиков ДГС,
+                            преобразователи первичные ПРП</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="2">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__head" data-attr="3">
+                        <h2 class="contacts__subtitle">Производство пружин</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="3">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__branch_content _hide" data-branch="borisov">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__block">
+                        <div class="contacts__item">
+                            <div class="contacts__image">
+                                <img src="./img/address.png" alt="">
+                            </div>
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle">
+                                    Юридический адресс
+                                </div>
+                                <div class="contacts__text">
+                                    г. Минск ул. М. Гусовского, д.20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__image">
+                                <img src="./img/call.png" alt="">
+                            </div>
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle">
+                                    Юридический адресс
+                                </div>
+                                <div class="contacts__text">
+                                    г. Минск ул. М. Гусовского, д.20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__image">
+                                <img src="./img/address.png" alt="">
+                            </div>
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle">
+                                    Юридический адресс
+                                </div>
+                                <div class="contacts__text">
+                                    г. Минск ул. М. Гусовского, д.20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="contacts__head" data-attr="1">
+                        <h2 class="contacts__subtitle">Отдел маркетинга, снабжения и сбыта</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="1">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__head" data-attr="2">
+                        <h2 class="contacts__subtitle">Производство жгутов проводов, датчиков ДГС,
+                            преобразователи первичные ПРП</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="2">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__head" data-attr="3">
+                        <h2 class="contacts__subtitle">Производство пружин</h2>
+                        <img class="contacts__arrow" src="./img/arrow.svg"/>
+                    </div>
+                    <div class="contacts__body" data-attr="3">
+                        <div class="contacts__line"></div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__who">Начальник ОМСиС: </span>
+                                <p class="contacts__text _defaul-text">Гулик Анжела Михайловна</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Тел: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 355 28 94</p>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__who">Факс: </span>
+                                <p class="contacts__text _defaul-text">+375 (17) 348 55 57 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="kitchen" id="kitchen" data-block="#kitchen">
+        <div class="kitchen__container _container">
+            <div class="kitchen__content">
+                <h2 class="kitchen__title _default-title">
+                    Унитарное предприятие «Виток» приглашает Вас в свою столовую 
+                </h2>
+                <p class="kitchen__subtitle">
+                    Столовая проводит: свадьбы, банкеты, юбилеи, а также  организацию поминальных столов.
+                </p>
+                <p class="kitchen__subtitle">
+                    К Вашим услугам наша просторная столовая на 80 мест предложит разнообразные горячие и холодные закуски, десерты и фирменные блюда, приготовленные нашими поварами высшей категории.
+                </p>
+                <button class="kitchen__button _btn" id="open-menu">
+                    Посмотреть меню
+                </button>
+                <div class="kitchen__row">
+                    <div class="kitchen__item">
+                        <div class="kitchen__image">
+                            <img src="./img/kitchen.jpg" alt="">
+                        </div>
+                        <div class="kitchen__info">
+                            <div class="kitchen__text">
+                                К Вашим услугам наша просторная столовая на 80 мест 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kitchen__item">
+                        <div class="kitchen__image">
+                            <img src="./img/kitchen-1.jpg" alt="">
+                        </div>
+                        <div class="kitchen__info">
+                            <div class="kitchen__text">
+                                Ежедневно с 12.00 до 14.30 в рабочие дни приглашаем на вкусные и недорогие обеды.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kitchen__item">
+                        <div class="kitchen__image">
+                            <img src="./img/kitchen-2.jpg" alt="">
+                        </div>
+                        <div class="kitchen__info">
+                            <div class="kitchen__text">
+                                Разнообразные горячие и холодные закуски, десерты, фирменные блюда.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kitchen__footer">
+                    <div class="kitchen__address">
+                        <div class="kitchen__icon">
+                            <img src="./img/address.png" alt="">
+                        </div>
+                        <div class="kitchen__address_item">
+                            <p class="kitchen__address_who">
+                                Ждём Вас по адресу: 
+                            </p>
+                            <p class="kitchen__address_info">
+                                г. Минск, ул. Гусовского,20 (вход со стороны ул. 3 Сентября).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="kitchen__address">
+                        <div class="kitchen__icon">
+                            <img src="./img/call.png" alt="">
+                        </div>
+                        <div class="kitchen__address_item">
+                            <p class="kitchen__address_who">
+                                Аренда столовой и предварительная запись по телефону:
+                            </p>
+                            <p class="kitchen__address_info">
+                                +375 17 242 40 73.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__wrapper _container">
+            <div class="footer__content">
+                <div class="footer__item">
+                    <span class="footer__text">
+                        Унитарное предприятия «Виток»
+                    </span>
+                    <p class="footer__text _defaul-text">
+                        г. Минск, ул. Гусовского, д.20
+                    </p>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__text _defaul-text">
+                        +375 17 338 33 53
+                    </p>
+                    <p class="footer__text _defaul-text">
+                        info@vitok.by
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-info">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <button class="modal__close">X</button>
+                <div class="modal__info _defaul-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem laborum atque placeat nostrum. Omnis alias minus explicabo ex ea! Voluptates, libero laborum! Excepturi temporibus nesciunt quasi culpa blanditiis omnis debitis officia ut fuga iure voluptatem illum facilis, magnam quos id amet accusantium corrupti quam qui doloribus beatae! Ut corrupti ullam atque, sequi exercitationem ducimus fugit esse dolorum eligendi sunt illo totam ipsam dolores, similique nostrum. Deleniti numquam recusandae pariatur aliquid cupiditate totam nisi laborum laudantium corporis doloribus quam alias, qui voluptas accusamus nihil laboriosam repudiandae minus? Animi natus numquam, voluptate ratione quam enim libero illo labore, totam dolore quaerat obcaecati perspiciatis saepe voluptatibus fuga explicabo. Delectus, rem. Tempora temporibus, ducimus reprehenderit vel totam fuga minima error? Nobis possimus provident blanditiis quos fuga necessitatibus exercitationem, fugit tempore impedit veritatis rerum accusantium quaerat magnam repellat adipisci, tenetur voluptates ducimus facere, iure earum eum. Mollitia, maxime vero. Quaerat illum porro amet beatae neque incidunt. Reprehenderit asperiores ducimus non sit nisi voluptatibus et eaque reiciendis optio dolorum. Facere blanditiis nesciunt tempore natus in possimus sit error, officiis, dolore perferendis velit debitis. Iste quisquam quidem ut et optio hic vel quia autem modi sint sapiente nobis nesciunt distinctio eum recusandae ex, fugiat odit laudantium earum excepturi eaque corporis accusamus maxime cupiditate. Incidunt est, hic tempore eius, inventore debitis quas quaerat, nam officiis voluptatem ratione eos enim cum voluptatum quibusdam facilis ullam! Sapiente impedit, harum eligendi illo commodi nobis minima facere fuga, velit ratione sunt voluptates accusantium ipsam laboriosam! Excepturi inventore pariatur aperiam omnis itaque dignissimos hic sed nisi ea repellat ducimus quis ipsa accusamus ut assumenda quasi nemo fugit, nostrum animi ipsum enim veritatis sunt. Quas et quasi quam pariatur ea assumenda harum ipsum, odit magni, vel optio, aliquam itaque iste odio deleniti! Earum, corrupti culpa quas sed officiis ratione non dignissimos suscipit rem aut animi voluptates sunt esse exercitationem ipsum labore sit adipisci laudantium harum dolore enim repellat obcaecati a! Ullam debitis perferendis natus officiis eum doloremque voluptates nisi eveniet neque? Quis perferendis sed possimus quasi quidem. Exercitationem, laborum doloribus, possimus perferendis tempora et optio minus, culpa officiis aut libero. Optio sunt minima hic magnam repudiandae, labore culpa sint ex commodi natus et suscipit veritatis laudantium iste aut obcaecati consequatur nesciunt in officia dolorem odio. Similique aspernatur reprehenderit cupiditate distinctio. Eum, suscipit aut error modi dignissimos impedit eius commodi quia, quae, reiciendis inventore voluptatem earum. Obcaecati incidunt cum nisi ratione vero, debitis voluptatum delectus ipsam libero dicta odit perferendis atque! Ducimus et praesentium molestias similique velit error libero voluptatum incidunt veniam, nobis expedita adipisci unde assumenda tenetur ullam aut explicabo! Error alias tempore natus dolor, aspernatur ipsum! Incidunt non unde ipsa inventore quam porro, voluptas pariatur facilis! Assumenda id molestiae, dolorum aspernatur accusantium, dicta expedita ea ipsa delectus magnam animi? Quisquam deserunt repellendus ullam sapiente officia aperiam debitis magnam perferendis possimus, corrupti tenetur hic nostrum aliquid dolor optio odit deleniti. Consectetur molestias quia soluta vel officiis temporibus, asperiores, aut corporis inventore nulla fugiat nesciunt. Magnam quia, ratione molestiae quae, facere laboriosam numquam quibusdam dicta reiciendis aspernatur eius, quaerat sunt aliquam atque! Veritatis numquam eaque enim pariatur similique nemo velit repellendus natus sed reprehenderit maxime, sapiente deserunt voluptatem temporibus asperiores vel tempora et incidunt nesciunt perferendis mollitia quibusdam officia facere beatae! Molestias, neque doloremque. Culpa soluta facilis optio porro cum incidunt animi. Vero expedita repellendus libero reiciendis quis dolorum maxime aperiam totam aliquid earum eaque illo officia dignissimos quo, odio mollitia. Eum, sapiente deleniti voluptates laboriosam voluptate dicta tempore! Temporibus ipsam, ducimus quibusdam libero nostrum incidunt provident consectetur expedita. Harum, temporibus quo illo rerum ad atque quidem animi cum consequatur, mollitia sequi perferendis labore corporis non soluta! Dicta totam corrupti, rerum saepe, expedita temporibus voluptatibus nam aliquam animi nesciunt culpa accusantium vitae, aliquid adipisci modi amet? Nisi nesciunt asperiores distinctio quod laudantium earum commodi reprehenderit architecto minus eum cupiditate esse possimus illum ab, exercitationem inventore aliquid id ipsam recusandae delectus libero ea! Debitis commodi culpa non voluptatem laborum molestiae, architecto nesciunt vitae magnam dicta libero. Quia non provident facilis quaerat pariatur eius aut deserunt, ducimus sint! Ratione totam possimus eveniet consequatur in fuga, quis asperiores quod excepturi nihil architecto necessitatibus beatae repudiandae, saepe, sunt sapiente quidem? Doloribus culpa doloremque ratione delectus, commodi asperiores quisquam ut error modi? Accusantium, cumque. Soluta, voluptatum earum excepturi odit fugiat veniam labore recusandae nulla, ipsam voluptatibus, nesciunt laboriosam porro dolore cum est! Perspiciatis, natus adipisci officiis ipsa iusto dolore praesentium, molestias labore eligendi magnam accusamus maiores impedit odit molestiae corrupti facilis distinctio asperiores sequi nihil unde doloremque modi, debitis quos commodi. Velit aliquam commodi voluptatem adipisci nisi. Earum, molestiae! Repudiandae aliquam atque asperiores laboriosam maiores saepe error doloribus aliquid repellat. Rerum quis eum, facilis reiciendis laboriosam sint? Nam expedita quisquam, asperiores ab beatae nemo assumenda ipsum aspernatur vel ullam corporis, accusantium, ex rem nulla qui! Harum explicabo saepe sapiente perspiciatis reprehenderit facere praesentium. Impedit pariatur odio officia consequatur reiciendis quis asperiores nemo, cum a et. Voluptatum delectus saepe accusantium quos est rem voluptatem non nostrum natus sunt illo amet ipsum dolores excepturi, adipisci nulla voluptate quae magni hic, fugit placeat pariatur minus aut ratione. Pariatur porro eveniet et fuga quod voluptate nobis voluptatibus aliquam magni magnam. In explicabo asperiores ratione ad perspiciatis omnis voluptatibus facilis sit deleniti! Non dolorem eum obcaecati. Quo corrupti, aut tempora tenetur rem earum nisi qui nesciunt odio nobis minima labore, iure minus officiis amet sit fugiat reiciendis voluptatem debitis harum? Hic voluptates officiis aliquid sed, voluptas sunt excepturi aut. Ex nobis excepturi fugit iste veritatis sapiente quaerat pariatur magnam at quam, perspiciatis facere mollitia possimus dicta quisquam eligendi dolorum. Ex labore tenetur consequatur sit nobis officia, sunt exercitationem repellat harum quisquam ad, unde qui deserunt ut. Cupiditate sit rerum aliquid, amet quis placeat officiis, facere ducimus ullam eveniet unde recusandae qui accusantium nobis tenetur asperiores magnam modi mollitia. Aliquam magni unde molestias placeat, doloribus ipsa tenetur voluptate numquam. Sit maxime cum recusandae atque consequuntur nobis dolor eaque qui, unde eum distinctio odit modi magnam quasi placeat temporibus reiciendis eveniet vel hic voluptatibus aliquid corrupti alias.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-product">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <button class="modal__close">X</button>
+                <div class="modal__body">
+                    <div class="modal__image">
+                        <img src="./img/products/image 4-5.png" alt="">
+                    </div>
+                    <div class="modal__info">
+                        <div class="modal__title">
+                            Подушки и одеяла
+                        </div>
+                        <div class="modal__text _defaul-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, sequi illo optio voluptatem aliquam quam officiis fuga? Dicta minima aperiam incidunt quisquam eveniet ducimus. Atque ipsam nam molestias esse?
+                        </div>
+                    </div>
+                </div>
+                <div class="_line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-menu">
+        <div class="modal__wrapper">
+            <div class="modal__content _menu">
+                <button class="modal__close">X</button>
+                    <h1 class="modal__title_main">Меню</h1>
+                    <div class="modal__kitchen">
+                        <div class="modal__kitchen_title modal__title">
+                            Салаты
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Салат из свежей капусты</p>
+                            <div class="modal__kitchen_info">
+                                <p>100</p>
+                                <p>1,06</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Салат из морской капусты с яйцом и луком</p>
+                            <div class="modal__kitchen_info">
+                                <p>100</p>
+                                <p>1,48</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Салат из свежей моркови</p>
+                            <div class="modal__kitchen_info">
+                                <p>100</p>
+                                <p>1,25</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_title modal__title">
+                            Первые блюда
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Борщ из свежей капусты со сметаной и мясом</p>
+                            <div class="modal__kitchen_info">
+                                <p>250/10/10</p>
+                                <p>1,29</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Суп молочный овсяный</p>
+                            <div class="modal__kitchen_info">
+                                <p>250</p>
+                                <p>0,62</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_title modal__title">
+                            Вторые блюда
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Биточки из говядины</p>
+                            <div class="modal__kitchen_info">
+                                <p>75</p>
+                                <p>2,01</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Плов из говядины</p>
+                            <div class="modal__kitchen_info">
+                                <p>200/50</p>
+                                <p>4,29</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Пeчень тушена в соусе</p>
+                            <div class="modal__kitchen_info">
+                                <p>150/50</p>
+                                <p>3,29</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Свинина отварная</p>
+                            <div class="modal__kitchen_info">
+                                <p>50</p>
+                                <p>2,59</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_title modal__title">
+                            Гарниры
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Каша пшеничная</p>
+                            <div class="modal__kitchen_info">
+                                <p>150</p>
+                                <p>0,42</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Капуста тушеная</p>
+                            <div class="modal__kitchen_info">
+                                <p>100</p>
+                                <p>0,66</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Макароны</p>
+                            <div class="modal__kitchen_info">
+                                <p>100</p>
+                                <p>0,57</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_title modal__title">
+                            Третьи блюда
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Компот из изюма</p>
+                            <div class="modal__kitchen_info">
+                                <p>150</p>
+                                <p>0,52</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Нектар</p>
+                            <div class="modal__kitchen_info">
+                                <p>200</p>
+                                <p>0,66</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>Хлеб</p>
+                            <div class="modal__kitchen_info">
+                                <p>1 кус.</p>
+                                <p>0,12</p>
+                            </div>
+                        </div>
+                        <div class="modal__kitchen_item">
+                            <p>батон</p>
+                            <div class="modal__kitchen_info">
+                                <p>1 кус.</p>
+                                <p>0,16</p>
+                            </div>
+                        </div>
+                    </div>
+             
+                <div class="_line"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

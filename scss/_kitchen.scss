@@ -1,0 +1,155 @@
+.kitchen {
+    padding: 5em 0;
+    background: #EDF7FA;
+
+    &__content {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba($color: #000000, $alpha: .35);
+        padding: 2em 1.5em;
+    }
+
+    &__text {
+        font-size: 1.2em;
+        padding-bottom: .45em;
+        text-align: justify;
+
+        
+        @media (max-width: 1000px) {
+            font-size: 1em;
+        }
+    }
+
+    &__title {
+        max-width: 80%;
+        padding-bottom: 0.5em;
+
+        @media (max-width: 1000px) {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 1.1em;
+            max-width: 100%;
+        }
+    }
+
+    &__subtitle {
+        max-width: 80%;
+        padding: .5em 0;
+        font-weight: 450;
+        font-size: 1.5em;
+        color: #2f2f2f;
+
+        @media (max-width: 1000px) {
+            font-size: 1.25em;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 1em;
+            max-width: 100%;
+        }
+    }
+
+    &__button {
+        margin-top: 1em;
+    }
+
+    &__row {
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 700px) {
+            overflow-y: hidden;
+            overflow-x: auto;
+            padding: 1em 0;
+        }
+
+        &::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $cl_primary;
+            border-radius: 10%;
+        }
+    }
+
+    &__item {
+        width: 300px;
+        height: 280px;
+        background: #fff;
+        box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: .35);
+        border-radius: 8px;
+
+        @media (max-width: 1000px) {
+            width: 200px;
+        }
+
+        @media (max-width: 700px) {
+            min-width: 250px;
+            margin-right: 1.5em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 350px) {
+            min-width: 230px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 150px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        padding: 1.5em 1em;
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        padding-top: .5em;
+
+        &_item {
+            display: flex;
+            padding: 0 1em;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        &_who {
+            font-weight: 500;
+
+            @media (max-width: 1000px) {
+                font-size: 1em;
+            }
+        }
+
+        &_info {
+            padding-left: 1em;
+            font-weight: 600;
+
+            @media (max-width: 1000px) {
+                font-size: 1em;
+            }
+
+            @media (max-width: 768px) {
+                padding: .25em 0;
+            }
+        }
+    }
+}
+
+

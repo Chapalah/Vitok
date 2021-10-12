@@ -1,0 +1,37 @@
+.footer {
+    background: #1f1f1f;
+    color: rgba($color: #fff, $alpha: .86);
+   
+    &__wrapper {
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 0;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        span {
+            font-size: 1.1em;
+
+            @media (max-width: 768px) {
+                font-size: 1em;
+            }
+        }
+        
+        @media (max-width: 450px) {
+            margin-top: 1em;
+        }
+    }
+
+    &__text {
+        font-size: .9em;
+        padding: .3em;
+    }
+}
+
