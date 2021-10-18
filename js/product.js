@@ -65,3 +65,18 @@ products.forEach(product => {
         openModal(productModal)
     })
 })
+
+filters.forEach(item => {
+    item.addEventListener('click', () => {
+        let currentFilter = ''
+
+        filters.forEach(filter => {
+            filter.classList.remove('_fillter-active')
+        })
+
+        currentFilter = item.getAttribute('data-product')
+        showProducts(currentFilter)
+
+        item.classList.add('_fillter-active')
+    })
+})

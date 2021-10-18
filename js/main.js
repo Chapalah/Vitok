@@ -19,12 +19,10 @@ burger.addEventListener('click', () => {
         setTimeout(() => { 
             toggleClass(menu, '_show-menu') 
             toggleClass(menu, '_close-menu')
-            // document.body.style.overflow = 'auto'
         }, 250)
     } else {
         toggleClass(burger, 'opened')
         toggleClass(menu, '_show-menu')
-        // document.body.style.overflow = 'hidden'
     }
 })
 
@@ -74,34 +72,5 @@ document.addEventListener('scroll', () => {
             })
         }
     })
-
-    // let windowCenter = (window.innerHeight / 2) + window.scrollY
-    // blocks.forEach(block => {
-    //     let scrollOffset = block.offsetTop
-
-    //     if (windowCenter >= scrollOffset) {
-    //         console.log(block.getAttribute('data-block'));
-    //         menuLinks.forEach(link => {
-    //             link.classList.remove('link-active')
-
-    //             if (link.getAttribute('href') === block.getAttribute('data-block'))
-    //                 link.classList.add('link-active')
-    //         })
-    //     }
-    // })
 })
 
-filters.forEach(item => {
-    item.addEventListener('click', () => {
-        let currentFilter = ''
-
-        filters.forEach(filter => {
-            filter.classList.remove('_fillter-active')
-        })
-
-        currentFilter = item.getAttribute('data-product')
-        showProducts(currentFilter)
-
-        item.classList.add('_fillter-active')
-    })
-})

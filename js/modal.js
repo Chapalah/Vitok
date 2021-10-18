@@ -29,7 +29,6 @@ function openModal(modal) {
 
 }
 
-
 document.getElementById('more-info').onclick = () => {
     openModal(document.getElementById('modal-info'))
 }
